@@ -1,4 +1,7 @@
+
 Big O Personnel Learning
+
+<img width="600" height="350" alt="bigocomplexitychart" src="https://user-images.githubusercontent.com/27411868/114745216-163c2000-9d6c-11eb-884a-1c1e9071ef03.PNG">
 
 ## Big Os-
     * O(1) Constant- no loops
