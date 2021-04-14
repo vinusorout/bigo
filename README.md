@@ -5,6 +5,11 @@ Big O Personnel Learning
 
 ## Big Os-
     * O(1) Constant- no loops
+    ```javascript
+    if (a === b) {
+    	console.log('a equals to b');
+    }
+    ```
     * O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
     * O(n) Linear- for loops, while loops through n items
     * O(n log(n)) Log Liniear- usually sorting operations
