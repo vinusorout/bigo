@@ -85,7 +85,9 @@ Big O Personnel Learning
 	// it will become O(n + n) => O(2n)
 	// But as per rule 2 remove constant it will finalyy become O(N)
 ```
+
   * O(a * b)     ○ * for nested steps
+
 ```javascript
         var array = [1,2,3,4,5,6]; // O(1)
 	var array2 = [1,2,3,4,5,6]; // O(1)
@@ -104,7 +106,9 @@ Big O Personnel Learning
 	// Now suppose it is processing on only one array and there are two for loops on same array and are nested
 	// it will become O(n * n) => O(n ^ 2) n square
 ```
+
 * Rule 4: Drop Non-dominant terms
+
 ```javascript
         var array = [1,2,3,4,5,6]; // O(1)
 	printTwoArrayNested(arr1){ // O(1)
