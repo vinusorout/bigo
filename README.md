@@ -55,16 +55,47 @@ Big O Personnel Learning
 			console.log(arr[i]); // O(N/2)
 		}
 	}
-	functionFindEven(array); // O(1)
+	printHalfArray(array); // O(1)
 	
 	// worst is O(N/2), but when the number N is very large then dividing by 2 doenst matter and in Big O we consider only large numbers of value N. 
 	// So final Big O is O(N)
+	
+	// simillarly let say there are two loops processing N data, in that case Big O should be (2n) but with the Rule 2 this become Big O of O(n)
 ```
 * Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
-  * O(a*b)
-  * ○ + for steps in order
-  * ○ * for nested steps
-  * Rule 4: Drop Non-dominant terms
+  * O(a + b)   ○ + for steps in order
+```javascript
+        var array = [1,2,3,4,5,6]; // O(1)
+	var array2 = [1,2,3,4,5,6]; // O(1)
+	printTwoArray(arr1, arr2){ // O(1)
+		for (let i =0; i < arr1.length; i++) {
+			console.log(arr1[i]); // O(a) length of array 1
+		}
+		for (let i =0; i < arr2.length; i++) {
+			console.log(arr2[i]); // O(b) length of array 2
+		}
+	}
+	printTwoArray(array, array2); // O(1)
+	
+	// Big O of this is O(a + b)
+```
+  * O(a * b)     ○ * for nested steps
+```javascript
+        var array = [1,2,3,4,5,6]; // O(1)
+	var array2 = [1,2,3,4,5,6]; // O(1)
+	printTwoArrayNested(arr1, arr2){ // O(1)
+		for (let i =0; i < arr1.length; i++) {
+			console.log(arr1[i]); // O(a) length of array 1
+			for (let i =0; i < arr2.length; i++) {
+				console.log(arr2[i]); // O(b) length of array 2
+			}
+		}
+	}
+	printArrayTwice(array, array2); // O(1)
+	
+	// Big O of this is O(a * b)
+```
+* Rule 4: Drop Non-dominant terms
 
 ## What causes Space complexity?-
 * Variables
