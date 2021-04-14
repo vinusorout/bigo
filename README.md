@@ -4,7 +4,7 @@ Big O Personnel Learning
 <img width="600" height="350" alt="bigocomplexitychart" src="https://user-images.githubusercontent.com/27411868/114745216-163c2000-9d6c-11eb-884a-1c1e9071ef03.PNG">
 
 ## Big Os-
-    * O(1) Constant- no loops
+* O(1) Constant- no loops
 
 ```javascript
         if (a === b) {
@@ -12,8 +12,8 @@ Big O Personnel Learning
         }
 ```
 
-    * O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
-    * O(n) Linear- for loops, while loops through n items
+* O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
+* O(n) Linear- for loops, while loops through n items
  
 ```javascript
         var array = [1,2,3,4,5,6]; // O(1)
@@ -29,10 +29,11 @@ Big O Personnel Learning
 	// worst is O(N), so its complexity is O(N). 
 	// This type of complexity increase as the numbers of elements in array increases, so it is LINEAR TIME.
 ```
-    * O(n log(n)) Log Liniear- usually sorting operations
-    * O(n^2) Quadratic- every element in a collection needs to be compared to each other element. Two nested loops
-    * O(2^n) Exponential- recursive algorithms that solves a problem of size N
-    * O(n!) Factorial- you are adding a loop for every element
+* O(n log(n)) Log Liniear- usually sorting operations
+* O(n^2) Quadratic- every element in a collection needs to be compared to each other element. Two nested loops
+* O(2^n) Exponential- recursive algorithms that solves a problem of size N
+* O(n!) Factorial- you are adding a loop for every element
+
 ### Iterating through half a collection is still O(n)
 ### Two separate collections: O(a * b)
 
@@ -43,9 +44,9 @@ Big O Personnel Learning
     * Outside Function call (function())
 
 ## Rule Book-
-    ### Rule 1: Always worst Case, so if a program has multiple Big O s like O(1), O(1) and O(n), then the final Big O of the program is O(n)
-    	* Breaks are good but doesnt matter as the Big O is always the WORST CASE.
-    ### Rule 2: Remove Constants, if a program has constant like O(1) remove them. And also the division ones for example:
+* Rule 1: Always worst Case, so if a program has multiple Big O s like O(1), O(1) and O(n), then the final Big O of the program is O(n)
+1 Breaks are good but doesnt matter as the Big O is always the WORST CASE.
+* Rule 2: Remove Constants, if a program has constant like O(1) remove them. And also the division ones for example:
 
 ```javascript
         var array = [1,2,3,4,5,6]; // O(1)
@@ -60,11 +61,12 @@ Big O Personnel Learning
 	// worst is O(N/2), but when the number N is very large then dividing by 2 doenst matter and in Big O we consider only large numbers of value N. 
 	// So final Big O is O(N)
 ```
-    ### Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
+* Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
       O(a*b)
       ○ + for steps in order
       ○ * for nested steps
-    ### Rule 4: Drop Non-dominant terms
+* Rule 4: Drop Non-dominant terms
+
 ## What causes Space complexity?-
 	* Variables
 	* Data Structures
