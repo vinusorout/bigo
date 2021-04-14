@@ -5,13 +5,30 @@ Big O Personnel Learning
 
 ## Big Os-
     * O(1) Constant- no loops
-    ```javascript
-    if (a === b) {
-    	console.log('a equals to b');
-    }
-    ```
+
+```javascript
+        if (a === b) {
+        	console.log('a equals to b');
+        }
+```
+
     * O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
     * O(n) Linear- for loops, while loops through n items
+ 
+```javascript
+        var array = [1,2,3,4,5,6]; // O(1)
+	functionFindEven(arr){ // O(1)
+		for (let i =0; i < arr.length; i++) {
+			if(arr[i]%2 === 0) { // O(N)
+				console.log(arr[i]); // O(N)
+			}
+		}
+	}
+	functionFindEven(array); // O(1)
+	
+	// worst is O(N), so its complexity is O(N). 
+	// This type of complexity increase as the numbers of elements in array increases, so it is LINEAR TIME.
+```
     * O(n log(n)) Log Liniear- usually sorting operations
     * O(n^2) Quadratic- every element in a collection needs to be compared to each other element. Two nested loops
     * O(2^n) Exponential- recursive algorithms that solves a problem of size N
@@ -26,8 +43,23 @@ Big O Personnel Learning
     * Outside Function call (function())
 
 ## Rule Book-
-    ### Rule 1: Always worst Case
-    ### Rule 2: Remove Constants
+    ### Rule 1: Always worst Case, so if a program has multiple Big O s like O(1), O(1) and O(n), then the final Big O of the program is O(n)
+    	* Breaks are good but doesnt matter as the Big O is always the WORST CASE.
+    ### Rule 2: Remove Constants, if a program has constant like O(1) remove them. And also the division ones for example:
+
+```javascript
+        var array = [1,2,3,4,5,6]; // O(1)
+	printHalfArray(arr){ // O(1)
+		var middleIndex = Math.floor(arr.length/2);
+		for (let i =0; i < middleIndex; i++) {
+			console.log(arr[i]); // O(N/2)
+		}
+	}
+	functionFindEven(array); // O(1)
+	
+	// worst is O(N/2), but when the number N is very large then dividing by 2 doenst matter and in Big O we consider only large numbers of value N. 
+	// So final Big O is O(N)
+```
     ### Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
       O(a*b)
       ○ + for steps in order
