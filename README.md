@@ -44,8 +44,7 @@ Big O Personnel Learning
     * Outside Function call (function())
 
 ## Rule Book-
-* Rule 1: Always worst Case, so if a program has multiple Big O s like O(1), O(1) and O(n), then the final Big O of the program is O(n)
-1 Breaks are good but doesnt matter as the Big O is always the WORST CASE.
+* Rule 1: Always worst Case, so if a program has multiple Big O s like O(1), O(1) and O(n), then the final Big O of the program is O(n). Breaks are good but doesnt matter as the Big O is always the WORST CASE.
 * Rule 2: Remove Constants, if a program has constant like O(1) remove them. And also the division ones for example:
 
 ```javascript
@@ -62,15 +61,15 @@ Big O Personnel Learning
 	// So final Big O is O(N)
 ```
 * Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be
-      O(a*b)
-      ○ + for steps in order
-      ○ * for nested steps
-* Rule 4: Drop Non-dominant terms
+  * O(a*b)
+  * ○ + for steps in order
+  * ○ * for nested steps
+  * Rule 4: Drop Non-dominant terms
 
 ## What causes Space complexity?-
-	* Variables
-	* Data Structures
-	* Function Call
-	* Allocations
+* Variables
+* Data Structures
+* Function Call
+* Allocations
 
 
