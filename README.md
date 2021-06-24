@@ -149,6 +149,16 @@ For example, they often come up when designing algorithms:
 
 Because of this, if we classify something as O(log n) we’ll typically mean O(log2 n)
 
+#### Binary Search:
+<img width="481" alt="Binary Search 1" src="https://user-images.githubusercontent.com/27411868/123329716-bf687900-d55a-11eb-962e-5c9fb5c57152.PNG">
+
+#### Binary Search Calculation:
+<img width="477" alt="Binary Search 2" src="https://user-images.githubusercontent.com/27411868/123329739-c42d2d00-d55a-11eb-8dec-3509042766a1.PNG">
+
+
+
+
+
 * O(n) linear for, while loops etc
 * O(n * log(n)) Log Linear Sorting Operations usually
 * O (n^2) Quadratic, Nested Loops, every collection needs to be comapared to every element.
