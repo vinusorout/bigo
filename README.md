@@ -132,6 +132,21 @@ Big O Personnel Learning
 ## Cheat Sheat
 * O(1) Constants no loops
 * O(log n) Logarithmic usually searching algos. This is why, for example, looking up people in a phone book is O(log n). You don't need to check every person in the phone book to find the right one; instead, you can simply divide-and-conquer by looking based on where their name is alphabetically, and in every section you only need to explore a subset of each section before you eventually find someone's phone number.
+### HOW TO CALCULATE LOG BASE 2:
+for eg log base 2 (8)
+This can be imagined as how many times we divide the number 8 by 2 to get to 1:
+
+  log base 2 = 3 => (((8 / 2) / 2) / 2) \]
+
+The same way we can have an exponential function with different bases (base 2 in our example), we can also have logarithms with other bases. A base-3, for instance, would be imagined as how many times can we divide some number by 3 before reaching 1.
+
+### Why base 2:
+For example, they often come up when designing algorithms:
+
+1. When we need to repeatedly divide an array in half – this is an operation used, for instance, in some sorting, like Merge Sort, or searching algorithms, like Binary Search; in this scenario, the number of times we can divide an array of size n in half is log2(n)
+2. When doing bit operations – for instance, writing a number in binary uses about log2(n) bits
+Because of this, if we classify something as O(log n) we’ll typically mean O(log2 n)
+
 * O(n) linear for, while loops etc
 * O(n * log(n)) Log Linear Sorting Operations usually
 * O (n^2) Quadratic, Nested Loops, every collection needs to be comapared to every element.
