@@ -128,6 +128,16 @@ Big O Personnel Learning
 	// so here the dominent term is on N^2
 	// so finalyy it will be Big O of O(n^2)
 ```
+
+## Cheat Sheat
+* O(1) Constants no loops
+* O(log n) Logarithmic usually searching algos
+* O(n) linear for, while loops etc
+* O(n * log(n)) Log Linear Sorting Operations usually
+* O (n^2) Quadratic, Nested Loops, every collection needs to be comapared to every element.
+* O(2^n) Exponential, recursive algo that solve a problem of size N
+* O(n!) you are adding a loop for every element.
+
 ## What causes Space complexity?-
 * Variables
 * Data Structures
