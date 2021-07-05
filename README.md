@@ -161,7 +161,62 @@ Because of this, if we classify something as O(log n) we’ll typically mean O(l
 
 * O(n) linear for, while loops etc
 * O(n * log(n)) Log Linear Sorting Operations usually
+
+Merge Sort is O(n * log n)
+```js
+var arr = [3,2, 1,5,4];
+function mergeSort(array) {
+	if(array.length === 1) {
+		return array;
+	}
+	// split array into left and right
+	const length = array.length;
+	const middle = Math.floor(length / 2);
+	const left = array.slice(0, middle);
+	const right = array.splice(middle);
+	return merge(
+		mergeSort(left),
+		mergeSort(right)
+		);
+}
+
+function merge(left, right) {
+	const result = [];
+	let leftIndex = 0;
+	let rightIndex = 0;
+	while(leftIndex < left.length && rightIndex < right.length) {
+		if(left[leftIndex] < right[rightIndex]) {
+			result.push[left[leftIndex]);
+			leftIndex++;
+		} else {
+			result.push(right[rightIndex]);
+			rightIndex++;
+		}
+	}
+	return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+}
+mergeSort(arr);
+```
+
 * O (n^2) Quadratic, Nested Loops, every collection needs to be comapared to every element.
+
+Bubble sort, Selection Sort is O(n ^ 2)
+```js
+var arr = [3,2, 1,5,4];
+function bubbleSort(input){
+	for(let i = 0; i < input.length; i++) {
+		for(let j =0; j < input.length - 1; j++) { (Nested Loops)
+			if(input[j] > input [j+1]) {
+				var temp = input[j];
+				input[j] = input[j+1];
+				input[j+1] = temp;
+			}
+		}
+	}
+}
+bubbleSort(arr);
+```
+
 * O(2^n) Exponential, recursive algo that solve a problem of size N
 * O(n!) you are adding a loop for every element.
 
