@@ -155,7 +155,24 @@ Because of this, if we classify something as O(log n) we’ll typically mean O(l
 #### Binary Search Calculation:
 <img width="477" alt="Binary Search 2" src="https://user-images.githubusercontent.com/27411868/123329739-c42d2d00-d55a-11eb-8dec-3509042766a1.PNG">
 
-
+### Binary Search Code:
+```ts
+const binarySearch = function(array, target) { // array should be sorted
+	let left = 0, right = array.length-1;
+	while(left < right) {
+		const mid = Math.floor(left + right)/2;
+		const foundVal = array[mid];
+		if(foundVal === target) {
+			retrun mid;
+		} else if(foundVal < target) {
+			left = mid + 1;
+		} else {
+			right = mid - 1;
+		}
+	}
+	return -1;
+}
+```
 
 
 
